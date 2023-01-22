@@ -27,4 +27,8 @@ textarea {
 .navbar-inverse .navbar-toggle:focus {
     background-color: #777;
     border-color: #fff
+
+}
+.field-validation-error{
+    color:red;
 }
