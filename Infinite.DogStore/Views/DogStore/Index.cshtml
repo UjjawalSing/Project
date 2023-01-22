@@ -3,7 +3,9 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Details Of Dogs Available</h2>
+@Html.ActionLink("Add New", "Create", "DogStore", null, new { @class = "btn btn-info" })
+
 <div class="row">
     <div class="col-md-4">
         <table class="table table-hover">
@@ -14,18 +16,13 @@
                 <th>
                     Dog Name
                 </th>
-                <th>
-                    Description
-                </th>
-               
-                <th>Action</th>
-            </tr>
+              </tr>
             @foreach (var prd in Model)
             {
                 <tr>
                     <td>@prd.Id</td>
-                    <td>@prd.DogName</td>
-                   
+                    <td>@Html.ActionLink(prd.DogName, "Details", "DogStore", new { id = prd.Id }, null)</td>
+
                 </tr>
             }
         </table>

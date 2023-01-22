@@ -66,3 +66,4 @@ D:\c#\NetCore\Infinite.DogStore\Infinite.DogStore\obj\Debug\Infinite.DogStore.pd
 D:\c#\NetCore\Infinite.DogStore\Infinite.DogStore\obj\Debug\Infinite.DogStore.Migrations.CreateTable.resources
 D:\c#\NetCore\Infinite.DogStore\Infinite.DogStore\obj\Debug\Infinite.DogStore.csproj.GenerateResource.cache
 D:\c#\NetCore\Infinite.DogStore\Infinite.DogStore\obj\Debug\Infinite.DogStore.Migrations.AlterTableName.resources
+D:\c#\NetCore\Infinite.DogStore\Infinite.DogStore\obj\Debug\Infinite.DogStore.Migrations.updateallTable.resources

@@ -1,0 +1,25 @@
+﻿@model Infinite.DogStore.Models.Dogs
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of Dog</h2>
+<div class="row">
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item"><b>Product Id :</b>@Model.Id</li>
+            <li class="list-group-item"><b>Dog Name :</b>@Model.DogName</li>
+            <li class="list-group-item"><b>Description :</b>@Model.Description</li>
+            <li class="list-group-item"><b>Dog Height :</b>@Model.Height</li>
+            <li class="list-group-item"><b>Dog Weight :</b>@Model.Weight</li>
+            <li class="list-group-item"><b>Dog Age :</b>@Model.Age</li>
+            <li class="list-group-item"><b>Breed Name :</b>@Model.DogBreed.DogBreedName</li>
+
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        @Html.ActionLink("Back to Index", "Index", "DogStore")
+    </div>
+</div>

@@ -15,5 +15,8 @@ namespace Infinite.DogStore.Models
         }   
         public DbSet<Dogs> Dogs { get; set; }
         public DbSet<DogBreed> DogBreeds { get; set; }
+
+        //for authentication and authorization
+      
     } 
 }

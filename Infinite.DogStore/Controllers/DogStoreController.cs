@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
+
 
 namespace Infinite.DogStore.Controllers
 {
@@ -43,6 +45,16 @@ namespace Infinite.DogStore.Controllers
             var dogbreed = _context.DogBreeds.ToList();
             ViewBag.DogBreeds=dogbreed;
             return View();
+        }
+        public ActionResult Details(int id)
+        {
+            var dogs = _context.Dogs.Include(p => p.DogBreed).FirstOrDefault(p => p.Id == id);
+            if (dogs != null)
+            {
+                return View(dogs);
+
+            }
+            return HttpNotFound();
         }
 }
 }
